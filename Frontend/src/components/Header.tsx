@@ -8,11 +8,13 @@ export default function Header() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="w-28 h-10 bg-white rounded-full flex items-center justify-center font-bold text-teal-500">
-              <img
-                src="https://res.cloudinary.com/drrhtmzpk/image/upload/v1753383976/UIUDSC_Logo.png"
-                alt="UIU Data Science Club"
-                className="w-full"
-              />
+              <Link to='/' className='cursor-pointer'>
+                <img
+                  src="https://res.cloudinary.com/drrhtmzpk/image/upload/v1753383976/UIUDSC_Logo.png"
+                  alt="UIU Data Science Club"
+                  className="w-full"
+                />
+              </Link>
             </div>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -25,14 +27,20 @@ export default function Header() {
             <Link to="/team" className="hover:opacity-90 transition">
               Team
             </Link>
-            <Link to="/track" className="hover:opacity-90 transition">
+            {/* <Link to="/track" className="hover:opacity-90 transition">
               Track Application
-            </Link>
+            </Link> */}
             <Link to="/events" className="hover:opacity-90 transition">
               Events
             </Link>
-            <Link to="/questionbank" className="hover:opacity-90 transition bg-cyan-500 rounded-xl text-white font-semibold px-4 py-2">
+            <Link to="/questionbank" className="hover:opacity-90 transition">
               Question Bank
+            </Link>
+            <Link
+              to="/join"
+              className="hover:opacity-90 transition bg-cyan-500 rounded-xl text-white font-semibold px-4 py-2"
+            >
+              Join Club
             </Link>
           </div>
         </div>
