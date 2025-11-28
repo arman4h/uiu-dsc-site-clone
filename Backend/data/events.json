@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ai-innovation-summit-2025",
+    "eventTitle": "AI Innovation Summit 2025",
+    "bannerUrl": "https://coingape.com/wp-content/uploads/2025/01/Glorium-featured.png",
+    "shortDescription": "A summit exploring the future of AI, ML, and automation.",
+    "eventDate": {
+      "start": "2025-12-10",
+      "end": "2025-12-10"
+    },
+    "eventTime": {
+      "start": "10:00 AM",
+      "end": "3:00 PM"
+    },
+    "roomNo": "Multipurpose Hall",
+    "capacity": "200",
+    "openTo": "UIU Students ",
+    "organizers": [
+      {
+        "Name": "Data Science Club",
+        "LogoUrl": "https://stg-dsc-prod.monzim.com/dsc-logo.webp",
+        "link": "https://uiudsc.uiu.ac.bd/"
+      }
+    
+    ],
+    "contactInfo": {
+      "Name": "UIU Data Science Club",
+      "Title": "Event Organizer",
+      "Email": "contact@uiudsc.uiu.ac.bd",
+      "Phone": "+8801961905838"
+    }
+  },
+  {
+    "id": "web-dev-bootcamp-workshop",
+    "eventTitle": "Web Dev Bootcamp Workshop",
+    "bannerUrl": "https://blog.pwskills.com/wp-content/uploads/2023/05/Untitled-1-1.png",
+    "shortDescription": "Hands-on session on React and backend integration.",
+    "speakers": {
+      "name": "Habibur Rahman",
+      "desg": "Senior Web Developer",
+      "photoUrl": "https://scontent.fdac155-1.fna.fbcdn.net/v/t39.30808-6/494101747_1903460403738762_7771302462599913151_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFRtzcXG1XqakTcqJGnnX37VuQ4Y_Ws8DdW5Dhj9azwN3Sp4ksDUwotoVzqP0X5ZQz5mbot0ixW7pTkp_3OKw_v&_nc_ohc=dMiRlANBFQMQ7kNvwGBV-UK&_nc_oc=AdlD6cwGPaIlBsIVrux2LnCFxjHG6QPNmTq1dFefPoMlWI0DZY-Ber5J4zUoAhWdpXI&_nc_zt=23&_nc_ht=scontent.fdac155-1.fna&_nc_gid=Gc44pPckQ68z9mUuOp-i9A&oh=00_Afhd74DLqffdlEwoJDrKfm794iluAbmTbr2JDoE9E96EEg&oe=692E6E34"
+    },
+    "eventDate": {
+      "start": "2026-01-05",
+      "end": "2026-01-05"
+    },
+    "eventTime": {
+      "start": "2:00 PM",
+      "end": "5:00 PM"
+    },
+    "roomNo": "Lab 204",
+    "capacity": "50",
+    "openTo": "Only Registered Students",
+    "organizers": [
+      {
+        "Name": "Data Science Club",
+        "LogoUrl": "https://stg-dsc-prod.monzim.com/dsc-logo.webp",
+        "link": "https://uiudsc.uiu.ac.bd/"
+      },
+      {
+        "Name": "UIU Computer Club",
+        "LogoUrl": "https://scontent.fdac155-1.fna.fbcdn.net/v/t39.30808-6/455231704_1029340745860636_5886708601230262787_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEkZVCU--3f8FKi0dSNBpk0kY8o-WEgwCeRjyj5YSDAJ08WJXBST2wCBVsPSmwNzyMM_RK7YuoV-CFrpiWqxkVo&_nc_ohc=pKnmpx51jq4Q7kNvwH21m0U&_nc_oc=AdlVl6KTiKIeNhtKj25xI-dmmZtJakU0nNMemP5OGN6Ga-hAh9rDYVwnVYcBeaidrfc&_nc_zt=23&_nc_ht=scontent.fdac155-1.fna&_nc_gid=tmRQfTrpJ_GsVOTk-msV8w&oh=00_AfjeVffedGNWi1XZN4CPvDgdbGYlGy4Q7RapyaBAtjYYTA&oe=692E659C",
+        "link": "https://computerclub.uiu.ac.bd/"
+      }
+    ],
+    "contactInfo": {
+      "Name": "UIU Data Science Club",
+      "Title": "Event Organizer",
+      "Email": "contact@uiudsc.uiu.ac.bd",
+      "Phone": "+8801961905838"
+    }
+  },
+  {
+    "id": "cybersecurity-awareness-program",
+    "eventTitle": "Cybersecurity Awareness Program",
+    "bannerUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr30v3_hNlG5XVslRleLVh8u0rGF86LDq6cA&s",
+    "shortDescription": "Learn about ethical hacking and digital safety.",
+    "speakers": {
+      "name": "Oishe Tabassum",
+      "desg": "Cybersecurity Analyst",
+      "photoUrl": "https://static.vecteezy.com/system/resources/thumbnails/038/962/461/small/ai-generated-caucasian-successful-confident-young-businesswoman-ceo-boss-bank-employee-worker-manager-with-arms-crossed-in-formal-wear-isolated-in-white-background-photo.jpg"
+    },
+    "eventDate": {
+      "start": "2025-09-12",
+      "end": "2025-09-12"
+    },
+    "eventTime": {
+      "start": "11:00 AM",
+      "end": "1:00 PM"
+    },
+    "roomNo": "Room 310",
+    "capacity": "120",
+    "openTo": "Everyone",
+    "organizers": [
+      {
+        "Name": "Data Science Club",
+        "LogoUrl": "https://stg-dsc-prod.monzim.com/dsc-logo.webp",
+        "link": "https://uiudsc.uiu.ac.bd/"
+      },
+      {
+        "Name": "Bangladesh Cyber Security Intelligence ",
+        "LogoUrl": "https://bcsi.gov.bd/wp-content/uploads/2024/04/cropped-00-2-150x150.png.webp",
+        "link": "https://bcsi.gov.bd/"
+      }
+    ],
+    "contactInfo": {
+      "Name": "Musfique Ahmed",
+      "Title": "President, UIU Data Science Club",
+      "Email": "mahmed2330101@bsds.uiu.ac.bd",
+      "Phone": "+8801961905838"
+    }
+  },
+  {
+    "id": "flutter-app-building-crash-course",
+    "eventTitle": "Flutter App Building Crash Course",
+    "bannerUrl": "https://i.ytimg.com/vi/1gDhl4leEzA/maxresdefault.jpg",
+    "shortDescription": "Beginner-friendly workshop for mobile app development.",
+    "speakers": {
+      "name": "Arman Siddique",
+      "desg": "Mobile App Developer",
+      "photoUrl": "https://media.istockphoto.com/id/1391718981/photo/portrait-of-a-confident-young-businessman-standing-with-his-arms-crossed-in-an-office.jpg?s=612x612&w=0&k=20&c=eF_0QCtw-Y8Q2c4_xQe6KTkcSPiGCT6qBf6nuavE2Dg="
+    },
+    "eventDate": {
+      "start": "2025-03-08",
+      "end": "2025-03-08"
+    },
+    "eventTime": {
+      "start": "9:00 AM",
+      "end": "12:00 PM"
+    },
+    "roomNo": "Innovation Lab",
+    "capacity": "80",
+    "openTo": "Students",
+    "organizers": [
+      {
+        "Name": "Data Science Club",
+        "LogoUrl": "https://stg-dsc-prod.monzim.com/dsc-logo.webp",
+        "link": "https://uiudsc.uiu.ac.bd/"
+      }
+    
+    ],
+    "contactInfo": {
+      "Name": "UIU Data Science Club",
+      "Title": "Event Organizer",
+      "Email": "contact@uiudsc.uiu.ac.bd",
+      "Phone": "+8801961905838"
+    }
+  },
+
+  {
+    "id": "data-science-prospects-seminar",
+    "eventTitle": "Data Science Prospects Seminar",
+    "bannerUrl": "https://res.cloudinary.com/drrhtmzpk/image/upload/v1742056303/Seminar-01_jo8h3h.jpg",
+    "shortDescription": "A practical workshop on Python, Pandas, and ML basics.",
+    "speakers": {
+      "name": "Md. Golam Rabiul Alam, Ph.D.",
+      "desg": "Professor,Department of Computer Science and Engineering, BRAC University",
+      "photoUrl": "https://stg-dsc-prod.monzim.com/events-assets/Golam%20Rabiul%20Alam%20WebP.webp"
+    },
+    "eventDate": {
+      "start": "2024-10-15",
+      "end": "2024-10-15"
+    },
+    "eventTime": {
+      "start": "10:00 AM",
+      "end": "4:00 PM"
+    },
+    "roomNo": "Seminar Hall",
+    "capacity": "150",
+    "openTo": "Everyone",
+    "organizers": [
+      {
+        "Name": "Data Science Club",
+        "LogoUrl": "https://stg-dsc-prod.monzim.com/dsc-logo.webp",
+        "link": "https://uiudsc.uiu.ac.bd/"
+      }
+    
+    ],
+    "contactInfo": {
+      "Name": "UIU Data Science Club",
+      "Title": "Event Organizer",
+      "Email": "contact@uiudsc.uiu.ac.bd",
+      "Phone": "+8801961905838"
+    }
+  },
+  {
+    "id": "leadership-and-youth-empowerment-talk",
+    "eventTitle": "Leadership & Youth Empowerment Talk",
+    "bannerUrl": "https://businesspost.ng/wp-content/uploads/2020/08/Youth-Empowerment.jpeg",
+    "shortDescription": "Motivational session focused on youth leadership.",
+    "speakers": {
+      "name": "Sadia Karim",
+      "desg": "Motivational Speaker",
+      "photoUrl": "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdvbWVuJTIwc3BlYWtlcnxlbnwwfDJ8MHx8fDA%3D"
+    },
+    "eventDate": {
+      "start": "2024-11-20",
+      "end": "2024-11-20"
+    },
+    "eventTime": {
+      "start": "3:00 PM",
+      "end": "5:00 PM"
+    },
+    "roomNo": "Auditorium B",
+    "capacity": "250",
+    "openTo": "Everyone",
+    "organizers": [
+      {
+        "Name": "Data Science Club",
+        "LogoUrl": "https://stg-dsc-prod.monzim.com/dsc-logo.webp",
+        "link": "https://uiudsc.uiu.ac.bd/"
+      }
+    
+    ]
+  },
+  {
+    "id": "startup-pitch-night",
+    "eventTitle": "Startup Pitch Night",
+    "bannerUrl": "https://www.eu-startups.com/wp-content/uploads/2023/03/Pitch-Night-VU-2-1024x674.png.webp",
+    "shortDescription": "Students pitched startup ideas to judges.",
+    "speakers": {
+      "name": "Nabil Chowdhury",
+      "desg": "Startup Mentor",
+      "photoUrl": "https://example.com/speakers/nabil.jpg"
+    },
+    "eventDate": {
+      "start": "2025-03-01",
+      "end": "2025-03-01"
+    },
+    "eventTime": {
+      "start": "5:00 PM",
+      "end": "8:00 PM"
+    },
+    "roomNo": "Innovation Hall",
+    "capacity": "180",
+    "openTo": "Entrepreneurs",
+    "organizers": [
+      {
+        "Name": "Data Science Club",
+        "LogoUrl": "https://stg-dsc-prod.monzim.com/dsc-logo.webp",
+        "link": "https://uiudsc.uiu.ac.bd/"
+      }
+    
+    ],
+    "contactInfo": {
+      "Name": "UIU Data Science Club",
+      "Title": "Event Organizer",
+      "Email": "contact@uiudsc.uiu.ac.bd",
+      "Phone": "+8801961905838"
+    }
+  },
+  {
+    "id": "uiux+design+basics+workshop",
+    "eventTitle": "UI/UX Design Basics Workshop",
+    "bannerUrl": "https://blog.mitsde.com/wp-content/uploads/2025/01/unlocking-the-world-of-ui-ux-design-courses-careers-and-salaries.jpg",
+    "shortDescription": "Interactive workshop on modern design principles.",
+    "speakers": {
+      "name": "Mehzabin Noor",
+      "desg": "UI/UX Designer",
+      "photoUrl": "https://images.unsplash.com/photo-1696960181436-1b6d9576354e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q29ycG9yYXRlJTIwd29tZW58ZW58MHwyfDB8fHww"
+    },
+    "eventDate": {
+      "start": "2025-04-10",
+      "end": "2025-04-10"
+    },
+    "eventTime": {
+      "start": "1:00 PM",
+      "end": "4:00 PM"
+    },
+    "roomNo": "Design Studio",
+    "capacity": "60",
+    "openTo": "Students",
+    "organizers": [
+      {
+        "Name": "Data Science Club",
+        "LogoUrl": "https://stg-dsc-prod.monzim.com/dsc-logo.webp",
+        "link": "https://uiudsc.uiu.ac.bd/"
+      }
+    
+    ]
+  }
+]

@@ -204,7 +204,7 @@ function PartnersPage() {
         </div>
       </section>
 
-      <Footer/>
+
     </div>
   )
 }

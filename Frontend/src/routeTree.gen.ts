@@ -9,7 +9,6 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TrackRouteImport } from './routes/track'
 import { Route as TeamRouteImport } from './routes/team'
 import { Route as QuestionbankRouteImport } from './routes/questionbank'
 import { Route as PartnersRouteImport } from './routes/partners'
@@ -18,12 +17,21 @@ import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as EventsRouteImport } from './routes/events'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as QuestionbankIndexRouteImport } from './routes/questionbank.index'
+import { Route as EventsIndexRouteImport } from './routes/events.index'
+import { Route as QuestionbankCategoryRouteImport } from './routes/questionbank.$category'
+import { Route as EventsEventIdRouteImport } from './routes/events.$eventId'
+import { Route as QuestionbankCategoryIndexRouteImport } from './routes/questionbank.$category.index'
+import { Route as QuestionbankCategoryTrimesterRouteImport } from './routes/questionbank.$category.$trimester'
+import { Route as QuestionbankCategoryTrimesterIndexRouteImport } from './routes/questionbank.$category.$trimester.index'
+import { Route as QuestionbankCategoryTrimesterCourseIdRouteImport } from './routes/questionbank.$category.$trimester.$courseId'
+import { Route as QuestionbankCategoryTrimesterCourseIdIndexRouteImport } from './routes/questionbank.$category.$trimester.$courseId.index'
+import { Route as QuestionbankCategoryTrimesterCourseIdQuestionsRouteImport } from './routes/questionbank.$category.$trimester.$courseId.questions'
+import { Route as QuestionbankCategoryTrimesterCourseIdPracticeRouteImport } from './routes/questionbank.$category.$trimester.$courseId.practice'
+import { Route as QuestionbankCategoryTrimesterCourseIdNotesRouteImport } from './routes/questionbank.$category.$trimester.$courseId.notes'
+import { Route as QuestionbankCategoryTrimesterCourseIdQuestionsIndexRouteImport } from './routes/questionbank.$category.$trimester.$courseId.questions.index'
+import { Route as QuestionbankCategoryTrimesterCourseIdQuestionsTypeRouteImport } from './routes/questionbank.$category.$trimester.$courseId.questions.$type'
 
-const TrackRoute = TrackRouteImport.update({
-  id: '/track',
-  path: '/track',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TeamRoute = TeamRouteImport.update({
   id: '/team',
   path: '/team',
@@ -64,40 +72,153 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const QuestionbankIndexRoute = QuestionbankIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => QuestionbankRoute,
+} as any)
+const EventsIndexRoute = EventsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => EventsRoute,
+} as any)
+const QuestionbankCategoryRoute = QuestionbankCategoryRouteImport.update({
+  id: '/$category',
+  path: '/$category',
+  getParentRoute: () => QuestionbankRoute,
+} as any)
+const EventsEventIdRoute = EventsEventIdRouteImport.update({
+  id: '/$eventId',
+  path: '/$eventId',
+  getParentRoute: () => EventsRoute,
+} as any)
+const QuestionbankCategoryIndexRoute =
+  QuestionbankCategoryIndexRouteImport.update({
+    id: '/',
+    path: '/',
+    getParentRoute: () => QuestionbankCategoryRoute,
+  } as any)
+const QuestionbankCategoryTrimesterRoute =
+  QuestionbankCategoryTrimesterRouteImport.update({
+    id: '/$trimester',
+    path: '/$trimester',
+    getParentRoute: () => QuestionbankCategoryRoute,
+  } as any)
+const QuestionbankCategoryTrimesterIndexRoute =
+  QuestionbankCategoryTrimesterIndexRouteImport.update({
+    id: '/',
+    path: '/',
+    getParentRoute: () => QuestionbankCategoryTrimesterRoute,
+  } as any)
+const QuestionbankCategoryTrimesterCourseIdRoute =
+  QuestionbankCategoryTrimesterCourseIdRouteImport.update({
+    id: '/$courseId',
+    path: '/$courseId',
+    getParentRoute: () => QuestionbankCategoryTrimesterRoute,
+  } as any)
+const QuestionbankCategoryTrimesterCourseIdIndexRoute =
+  QuestionbankCategoryTrimesterCourseIdIndexRouteImport.update({
+    id: '/',
+    path: '/',
+    getParentRoute: () => QuestionbankCategoryTrimesterCourseIdRoute,
+  } as any)
+const QuestionbankCategoryTrimesterCourseIdQuestionsRoute =
+  QuestionbankCategoryTrimesterCourseIdQuestionsRouteImport.update({
+    id: '/questions',
+    path: '/questions',
+    getParentRoute: () => QuestionbankCategoryTrimesterCourseIdRoute,
+  } as any)
+const QuestionbankCategoryTrimesterCourseIdPracticeRoute =
+  QuestionbankCategoryTrimesterCourseIdPracticeRouteImport.update({
+    id: '/practice',
+    path: '/practice',
+    getParentRoute: () => QuestionbankCategoryTrimesterCourseIdRoute,
+  } as any)
+const QuestionbankCategoryTrimesterCourseIdNotesRoute =
+  QuestionbankCategoryTrimesterCourseIdNotesRouteImport.update({
+    id: '/notes',
+    path: '/notes',
+    getParentRoute: () => QuestionbankCategoryTrimesterCourseIdRoute,
+  } as any)
+const QuestionbankCategoryTrimesterCourseIdQuestionsIndexRoute =
+  QuestionbankCategoryTrimesterCourseIdQuestionsIndexRouteImport.update({
+    id: '/',
+    path: '/',
+    getParentRoute: () => QuestionbankCategoryTrimesterCourseIdQuestionsRoute,
+  } as any)
+const QuestionbankCategoryTrimesterCourseIdQuestionsTypeRoute =
+  QuestionbankCategoryTrimesterCourseIdQuestionsTypeRouteImport.update({
+    id: '/$type',
+    path: '/$type',
+    getParentRoute: () => QuestionbankCategoryTrimesterCourseIdQuestionsRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/events': typeof EventsRoute
+  '/events': typeof EventsRouteWithChildren
   '/gallery': typeof GalleryRoute
   '/join': typeof JoinRoute
   '/partners': typeof PartnersRoute
-  '/questionbank': typeof QuestionbankRoute
+  '/questionbank': typeof QuestionbankRouteWithChildren
   '/team': typeof TeamRoute
-  '/track': typeof TrackRoute
+  '/events/$eventId': typeof EventsEventIdRoute
+  '/questionbank/$category': typeof QuestionbankCategoryRouteWithChildren
+  '/events/': typeof EventsIndexRoute
+  '/questionbank/': typeof QuestionbankIndexRoute
+  '/questionbank/$category/$trimester': typeof QuestionbankCategoryTrimesterRouteWithChildren
+  '/questionbank/$category/': typeof QuestionbankCategoryIndexRoute
+  '/questionbank/$category/$trimester/$courseId': typeof QuestionbankCategoryTrimesterCourseIdRouteWithChildren
+  '/questionbank/$category/$trimester/': typeof QuestionbankCategoryTrimesterIndexRoute
+  '/questionbank/$category/$trimester/$courseId/notes': typeof QuestionbankCategoryTrimesterCourseIdNotesRoute
+  '/questionbank/$category/$trimester/$courseId/practice': typeof QuestionbankCategoryTrimesterCourseIdPracticeRoute
+  '/questionbank/$category/$trimester/$courseId/questions': typeof QuestionbankCategoryTrimesterCourseIdQuestionsRouteWithChildren
+  '/questionbank/$category/$trimester/$courseId/': typeof QuestionbankCategoryTrimesterCourseIdIndexRoute
+  '/questionbank/$category/$trimester/$courseId/questions/$type': typeof QuestionbankCategoryTrimesterCourseIdQuestionsTypeRoute
+  '/questionbank/$category/$trimester/$courseId/questions/': typeof QuestionbankCategoryTrimesterCourseIdQuestionsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/events': typeof EventsRoute
   '/gallery': typeof GalleryRoute
   '/join': typeof JoinRoute
   '/partners': typeof PartnersRoute
-  '/questionbank': typeof QuestionbankRoute
   '/team': typeof TeamRoute
-  '/track': typeof TrackRoute
+  '/events/$eventId': typeof EventsEventIdRoute
+  '/events': typeof EventsIndexRoute
+  '/questionbank': typeof QuestionbankIndexRoute
+  '/questionbank/$category': typeof QuestionbankCategoryIndexRoute
+  '/questionbank/$category/$trimester': typeof QuestionbankCategoryTrimesterIndexRoute
+  '/questionbank/$category/$trimester/$courseId/notes': typeof QuestionbankCategoryTrimesterCourseIdNotesRoute
+  '/questionbank/$category/$trimester/$courseId/practice': typeof QuestionbankCategoryTrimesterCourseIdPracticeRoute
+  '/questionbank/$category/$trimester/$courseId': typeof QuestionbankCategoryTrimesterCourseIdIndexRoute
+  '/questionbank/$category/$trimester/$courseId/questions/$type': typeof QuestionbankCategoryTrimesterCourseIdQuestionsTypeRoute
+  '/questionbank/$category/$trimester/$courseId/questions': typeof QuestionbankCategoryTrimesterCourseIdQuestionsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/events': typeof EventsRoute
+  '/events': typeof EventsRouteWithChildren
   '/gallery': typeof GalleryRoute
   '/join': typeof JoinRoute
   '/partners': typeof PartnersRoute
-  '/questionbank': typeof QuestionbankRoute
+  '/questionbank': typeof QuestionbankRouteWithChildren
   '/team': typeof TeamRoute
-  '/track': typeof TrackRoute
+  '/events/$eventId': typeof EventsEventIdRoute
+  '/questionbank/$category': typeof QuestionbankCategoryRouteWithChildren
+  '/events/': typeof EventsIndexRoute
+  '/questionbank/': typeof QuestionbankIndexRoute
+  '/questionbank/$category/$trimester': typeof QuestionbankCategoryTrimesterRouteWithChildren
+  '/questionbank/$category/': typeof QuestionbankCategoryIndexRoute
+  '/questionbank/$category/$trimester/$courseId': typeof QuestionbankCategoryTrimesterCourseIdRouteWithChildren
+  '/questionbank/$category/$trimester/': typeof QuestionbankCategoryTrimesterIndexRoute
+  '/questionbank/$category/$trimester/$courseId/notes': typeof QuestionbankCategoryTrimesterCourseIdNotesRoute
+  '/questionbank/$category/$trimester/$courseId/practice': typeof QuestionbankCategoryTrimesterCourseIdPracticeRoute
+  '/questionbank/$category/$trimester/$courseId/questions': typeof QuestionbankCategoryTrimesterCourseIdQuestionsRouteWithChildren
+  '/questionbank/$category/$trimester/$courseId/': typeof QuestionbankCategoryTrimesterCourseIdIndexRoute
+  '/questionbank/$category/$trimester/$courseId/questions/$type': typeof QuestionbankCategoryTrimesterCourseIdQuestionsTypeRoute
+  '/questionbank/$category/$trimester/$courseId/questions/': typeof QuestionbankCategoryTrimesterCourseIdQuestionsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -110,18 +231,38 @@ export interface FileRouteTypes {
     | '/partners'
     | '/questionbank'
     | '/team'
-    | '/track'
+    | '/events/$eventId'
+    | '/questionbank/$category'
+    | '/events/'
+    | '/questionbank/'
+    | '/questionbank/$category/$trimester'
+    | '/questionbank/$category/'
+    | '/questionbank/$category/$trimester/$courseId'
+    | '/questionbank/$category/$trimester/'
+    | '/questionbank/$category/$trimester/$courseId/notes'
+    | '/questionbank/$category/$trimester/$courseId/practice'
+    | '/questionbank/$category/$trimester/$courseId/questions'
+    | '/questionbank/$category/$trimester/$courseId/'
+    | '/questionbank/$category/$trimester/$courseId/questions/$type'
+    | '/questionbank/$category/$trimester/$courseId/questions/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/events'
     | '/gallery'
     | '/join'
     | '/partners'
-    | '/questionbank'
     | '/team'
-    | '/track'
+    | '/events/$eventId'
+    | '/events'
+    | '/questionbank'
+    | '/questionbank/$category'
+    | '/questionbank/$category/$trimester'
+    | '/questionbank/$category/$trimester/$courseId/notes'
+    | '/questionbank/$category/$trimester/$courseId/practice'
+    | '/questionbank/$category/$trimester/$courseId'
+    | '/questionbank/$category/$trimester/$courseId/questions/$type'
+    | '/questionbank/$category/$trimester/$courseId/questions'
   id:
     | '__root__'
     | '/'
@@ -132,30 +273,35 @@ export interface FileRouteTypes {
     | '/partners'
     | '/questionbank'
     | '/team'
-    | '/track'
+    | '/events/$eventId'
+    | '/questionbank/$category'
+    | '/events/'
+    | '/questionbank/'
+    | '/questionbank/$category/$trimester'
+    | '/questionbank/$category/'
+    | '/questionbank/$category/$trimester/$courseId'
+    | '/questionbank/$category/$trimester/'
+    | '/questionbank/$category/$trimester/$courseId/notes'
+    | '/questionbank/$category/$trimester/$courseId/practice'
+    | '/questionbank/$category/$trimester/$courseId/questions'
+    | '/questionbank/$category/$trimester/$courseId/'
+    | '/questionbank/$category/$trimester/$courseId/questions/$type'
+    | '/questionbank/$category/$trimester/$courseId/questions/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  EventsRoute: typeof EventsRoute
+  EventsRoute: typeof EventsRouteWithChildren
   GalleryRoute: typeof GalleryRoute
   JoinRoute: typeof JoinRoute
   PartnersRoute: typeof PartnersRoute
-  QuestionbankRoute: typeof QuestionbankRoute
+  QuestionbankRoute: typeof QuestionbankRouteWithChildren
   TeamRoute: typeof TeamRoute
-  TrackRoute: typeof TrackRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/track': {
-      id: '/track'
-      path: '/track'
-      fullPath: '/track'
-      preLoaderRoute: typeof TrackRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/team': {
       id: '/team'
       path: '/team'
@@ -212,19 +358,217 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/questionbank/': {
+      id: '/questionbank/'
+      path: '/'
+      fullPath: '/questionbank/'
+      preLoaderRoute: typeof QuestionbankIndexRouteImport
+      parentRoute: typeof QuestionbankRoute
+    }
+    '/events/': {
+      id: '/events/'
+      path: '/'
+      fullPath: '/events/'
+      preLoaderRoute: typeof EventsIndexRouteImport
+      parentRoute: typeof EventsRoute
+    }
+    '/questionbank/$category': {
+      id: '/questionbank/$category'
+      path: '/$category'
+      fullPath: '/questionbank/$category'
+      preLoaderRoute: typeof QuestionbankCategoryRouteImport
+      parentRoute: typeof QuestionbankRoute
+    }
+    '/events/$eventId': {
+      id: '/events/$eventId'
+      path: '/$eventId'
+      fullPath: '/events/$eventId'
+      preLoaderRoute: typeof EventsEventIdRouteImport
+      parentRoute: typeof EventsRoute
+    }
+    '/questionbank/$category/': {
+      id: '/questionbank/$category/'
+      path: '/'
+      fullPath: '/questionbank/$category/'
+      preLoaderRoute: typeof QuestionbankCategoryIndexRouteImport
+      parentRoute: typeof QuestionbankCategoryRoute
+    }
+    '/questionbank/$category/$trimester': {
+      id: '/questionbank/$category/$trimester'
+      path: '/$trimester'
+      fullPath: '/questionbank/$category/$trimester'
+      preLoaderRoute: typeof QuestionbankCategoryTrimesterRouteImport
+      parentRoute: typeof QuestionbankCategoryRoute
+    }
+    '/questionbank/$category/$trimester/': {
+      id: '/questionbank/$category/$trimester/'
+      path: '/'
+      fullPath: '/questionbank/$category/$trimester/'
+      preLoaderRoute: typeof QuestionbankCategoryTrimesterIndexRouteImport
+      parentRoute: typeof QuestionbankCategoryTrimesterRoute
+    }
+    '/questionbank/$category/$trimester/$courseId': {
+      id: '/questionbank/$category/$trimester/$courseId'
+      path: '/$courseId'
+      fullPath: '/questionbank/$category/$trimester/$courseId'
+      preLoaderRoute: typeof QuestionbankCategoryTrimesterCourseIdRouteImport
+      parentRoute: typeof QuestionbankCategoryTrimesterRoute
+    }
+    '/questionbank/$category/$trimester/$courseId/': {
+      id: '/questionbank/$category/$trimester/$courseId/'
+      path: '/'
+      fullPath: '/questionbank/$category/$trimester/$courseId/'
+      preLoaderRoute: typeof QuestionbankCategoryTrimesterCourseIdIndexRouteImport
+      parentRoute: typeof QuestionbankCategoryTrimesterCourseIdRoute
+    }
+    '/questionbank/$category/$trimester/$courseId/questions': {
+      id: '/questionbank/$category/$trimester/$courseId/questions'
+      path: '/questions'
+      fullPath: '/questionbank/$category/$trimester/$courseId/questions'
+      preLoaderRoute: typeof QuestionbankCategoryTrimesterCourseIdQuestionsRouteImport
+      parentRoute: typeof QuestionbankCategoryTrimesterCourseIdRoute
+    }
+    '/questionbank/$category/$trimester/$courseId/practice': {
+      id: '/questionbank/$category/$trimester/$courseId/practice'
+      path: '/practice'
+      fullPath: '/questionbank/$category/$trimester/$courseId/practice'
+      preLoaderRoute: typeof QuestionbankCategoryTrimesterCourseIdPracticeRouteImport
+      parentRoute: typeof QuestionbankCategoryTrimesterCourseIdRoute
+    }
+    '/questionbank/$category/$trimester/$courseId/notes': {
+      id: '/questionbank/$category/$trimester/$courseId/notes'
+      path: '/notes'
+      fullPath: '/questionbank/$category/$trimester/$courseId/notes'
+      preLoaderRoute: typeof QuestionbankCategoryTrimesterCourseIdNotesRouteImport
+      parentRoute: typeof QuestionbankCategoryTrimesterCourseIdRoute
+    }
+    '/questionbank/$category/$trimester/$courseId/questions/': {
+      id: '/questionbank/$category/$trimester/$courseId/questions/'
+      path: '/'
+      fullPath: '/questionbank/$category/$trimester/$courseId/questions/'
+      preLoaderRoute: typeof QuestionbankCategoryTrimesterCourseIdQuestionsIndexRouteImport
+      parentRoute: typeof QuestionbankCategoryTrimesterCourseIdQuestionsRoute
+    }
+    '/questionbank/$category/$trimester/$courseId/questions/$type': {
+      id: '/questionbank/$category/$trimester/$courseId/questions/$type'
+      path: '/$type'
+      fullPath: '/questionbank/$category/$trimester/$courseId/questions/$type'
+      preLoaderRoute: typeof QuestionbankCategoryTrimesterCourseIdQuestionsTypeRouteImport
+      parentRoute: typeof QuestionbankCategoryTrimesterCourseIdQuestionsRoute
+    }
   }
 }
+
+interface EventsRouteChildren {
+  EventsEventIdRoute: typeof EventsEventIdRoute
+  EventsIndexRoute: typeof EventsIndexRoute
+}
+
+const EventsRouteChildren: EventsRouteChildren = {
+  EventsEventIdRoute: EventsEventIdRoute,
+  EventsIndexRoute: EventsIndexRoute,
+}
+
+const EventsRouteWithChildren =
+  EventsRoute._addFileChildren(EventsRouteChildren)
+
+interface QuestionbankCategoryTrimesterCourseIdQuestionsRouteChildren {
+  QuestionbankCategoryTrimesterCourseIdQuestionsTypeRoute: typeof QuestionbankCategoryTrimesterCourseIdQuestionsTypeRoute
+  QuestionbankCategoryTrimesterCourseIdQuestionsIndexRoute: typeof QuestionbankCategoryTrimesterCourseIdQuestionsIndexRoute
+}
+
+const QuestionbankCategoryTrimesterCourseIdQuestionsRouteChildren: QuestionbankCategoryTrimesterCourseIdQuestionsRouteChildren =
+  {
+    QuestionbankCategoryTrimesterCourseIdQuestionsTypeRoute:
+      QuestionbankCategoryTrimesterCourseIdQuestionsTypeRoute,
+    QuestionbankCategoryTrimesterCourseIdQuestionsIndexRoute:
+      QuestionbankCategoryTrimesterCourseIdQuestionsIndexRoute,
+  }
+
+const QuestionbankCategoryTrimesterCourseIdQuestionsRouteWithChildren =
+  QuestionbankCategoryTrimesterCourseIdQuestionsRoute._addFileChildren(
+    QuestionbankCategoryTrimesterCourseIdQuestionsRouteChildren,
+  )
+
+interface QuestionbankCategoryTrimesterCourseIdRouteChildren {
+  QuestionbankCategoryTrimesterCourseIdNotesRoute: typeof QuestionbankCategoryTrimesterCourseIdNotesRoute
+  QuestionbankCategoryTrimesterCourseIdPracticeRoute: typeof QuestionbankCategoryTrimesterCourseIdPracticeRoute
+  QuestionbankCategoryTrimesterCourseIdQuestionsRoute: typeof QuestionbankCategoryTrimesterCourseIdQuestionsRouteWithChildren
+  QuestionbankCategoryTrimesterCourseIdIndexRoute: typeof QuestionbankCategoryTrimesterCourseIdIndexRoute
+}
+
+const QuestionbankCategoryTrimesterCourseIdRouteChildren: QuestionbankCategoryTrimesterCourseIdRouteChildren =
+  {
+    QuestionbankCategoryTrimesterCourseIdNotesRoute:
+      QuestionbankCategoryTrimesterCourseIdNotesRoute,
+    QuestionbankCategoryTrimesterCourseIdPracticeRoute:
+      QuestionbankCategoryTrimesterCourseIdPracticeRoute,
+    QuestionbankCategoryTrimesterCourseIdQuestionsRoute:
+      QuestionbankCategoryTrimesterCourseIdQuestionsRouteWithChildren,
+    QuestionbankCategoryTrimesterCourseIdIndexRoute:
+      QuestionbankCategoryTrimesterCourseIdIndexRoute,
+  }
+
+const QuestionbankCategoryTrimesterCourseIdRouteWithChildren =
+  QuestionbankCategoryTrimesterCourseIdRoute._addFileChildren(
+    QuestionbankCategoryTrimesterCourseIdRouteChildren,
+  )
+
+interface QuestionbankCategoryTrimesterRouteChildren {
+  QuestionbankCategoryTrimesterCourseIdRoute: typeof QuestionbankCategoryTrimesterCourseIdRouteWithChildren
+  QuestionbankCategoryTrimesterIndexRoute: typeof QuestionbankCategoryTrimesterIndexRoute
+}
+
+const QuestionbankCategoryTrimesterRouteChildren: QuestionbankCategoryTrimesterRouteChildren =
+  {
+    QuestionbankCategoryTrimesterCourseIdRoute:
+      QuestionbankCategoryTrimesterCourseIdRouteWithChildren,
+    QuestionbankCategoryTrimesterIndexRoute:
+      QuestionbankCategoryTrimesterIndexRoute,
+  }
+
+const QuestionbankCategoryTrimesterRouteWithChildren =
+  QuestionbankCategoryTrimesterRoute._addFileChildren(
+    QuestionbankCategoryTrimesterRouteChildren,
+  )
+
+interface QuestionbankCategoryRouteChildren {
+  QuestionbankCategoryTrimesterRoute: typeof QuestionbankCategoryTrimesterRouteWithChildren
+  QuestionbankCategoryIndexRoute: typeof QuestionbankCategoryIndexRoute
+}
+
+const QuestionbankCategoryRouteChildren: QuestionbankCategoryRouteChildren = {
+  QuestionbankCategoryTrimesterRoute:
+    QuestionbankCategoryTrimesterRouteWithChildren,
+  QuestionbankCategoryIndexRoute: QuestionbankCategoryIndexRoute,
+}
+
+const QuestionbankCategoryRouteWithChildren =
+  QuestionbankCategoryRoute._addFileChildren(QuestionbankCategoryRouteChildren)
+
+interface QuestionbankRouteChildren {
+  QuestionbankCategoryRoute: typeof QuestionbankCategoryRouteWithChildren
+  QuestionbankIndexRoute: typeof QuestionbankIndexRoute
+}
+
+const QuestionbankRouteChildren: QuestionbankRouteChildren = {
+  QuestionbankCategoryRoute: QuestionbankCategoryRouteWithChildren,
+  QuestionbankIndexRoute: QuestionbankIndexRoute,
+}
+
+const QuestionbankRouteWithChildren = QuestionbankRoute._addFileChildren(
+  QuestionbankRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  EventsRoute: EventsRoute,
+  EventsRoute: EventsRouteWithChildren,
   GalleryRoute: GalleryRoute,
   JoinRoute: JoinRoute,
   PartnersRoute: PartnersRoute,
-  QuestionbankRoute: QuestionbankRoute,
+  QuestionbankRoute: QuestionbankRouteWithChildren,
   TeamRoute: TeamRoute,
-  TrackRoute: TrackRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

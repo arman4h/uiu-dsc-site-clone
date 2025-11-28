@@ -363,8 +363,7 @@ function TeamPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <Footer/>
+
     </div>
   )
 }

@@ -1,11 +1,12 @@
 import { Camera } from 'lucide-react'
 import { Link, createFileRoute } from '@tanstack/react-router'
 import Footer from '@/components/Footer'
-import Joinclub from '@/components/joinclub'
+import Joinclub from '@/components/Joinclub'
 
 export const Route = createFileRoute('/about')({
   component: AboutPage,
 })
+
 
 const galleryImages = [
   'https://scontent.fdac155-1.fna.fbcdn.net/v/t39.30808-6/528222452_122145127400779406_4016274162636514116_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH4JG442LN7nd9HHWvgEv73GyaaG4zXJt0bJpobjNcm3UdATWBiaLCjjFe5FCVaHjsC-jD2W7mrK_OkwzVWCNkk&_nc_ohc=z0DudCgOM0oQ7kNvwEFVz1A&_nc_oc=AdmbRh5XMvCoJx4ITuL2etQKOYuQ9UO9VBCIU_Yz9IPfk_2Zm8uJfR8DRwq8zz1K-Fk&_nc_zt=23&_nc_ht=scontent.fdac155-1.fna&_nc_gid=FtXfAk0ooNdfHADrglLdoA&oh=00_Afh7oSm5lO7hBRJFXGaKVOugiUPFum0eSppaX58Tj4trkg&oe=692E22ED',
@@ -92,8 +93,7 @@ function AboutPage() {
       {/* CTA Join */}
       <Joinclub/>
 
-      {/* Footer */}
-      <Footer/>
+
     </div>
   )
 }

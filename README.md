@@ -18,25 +18,35 @@ This repo contains both the frontend and backend code in separate folders. Each 
 
 Prerequisites: Node.js (recommended v16+), npm or pnpm.
 
-Frontend (from repo root):
+### Option 1: Start Both Servers at Once (PowerShell)
+```powershell
+# From the repo root:
+.\start-dev.ps1
+```
+This will start both the backend (port 5000) and frontend (port 3000) in new terminal windows.
 
+### Option 2: Start Servers Manually
+
+**Frontend** (from repo root):
 ```powershell
 cd Frontend
 npm install
-# Start the app (common commands; see Frontend/README.md for the specific script)
-npm run dev   # or: npm start
+npm run dev   # Runs on http://localhost:3000
 ```
 
-Backend (from repo root):
-
+**Backend** (from repo root, in a separate terminal):
 ```powershell
 cd Backend
 npm install
-# Start the server (see Backend/README.md for env vars and exact script)
-npm run dev   # or: npm start
+npm start     # Runs on http://localhost:5000
 ```
 
-Run both services (frontend + backend) concurrently during local development if needed. The sub-README files contain environment configuration, ports and any extra setup.
+## Important: Backend Server Must Be Running
+
+The frontend fetches event data from `http://localhost:5000/api/events`. If you see a "Loading..." message on the Events page that never completes, it means:
+1. The backend server is not running
+2. Start it with `npm start` in the Backend folder
+3. Then refresh the frontend page
 
 ## Notes
 

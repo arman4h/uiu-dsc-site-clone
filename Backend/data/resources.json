@@ -1,0 +1,481 @@
+[
+  {
+    "id": "ds-1501",
+    "courseName": "Programming for Data Science",
+    "courseCode": "DS 1501",
+    "trimester": "1st",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Exam Materials",
+    "questions": {
+      "classTest": [
+        {
+          "testNo": "CT-1",
+          "trimesterName": "Spring 2024",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        },
+        {
+          "testNo": "CT-2",
+          "trimesterName": "Spring 2024",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ],
+      "midtermExam": [
+        {
+          "trimesterName": "Spring 2024",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ],
+      "finalExam": []
+    },
+    "notes": [
+      {
+        "author": "Rana Rahman",
+        "email": "rana@example.com",
+        "id": "2101045",
+        "noteTitle": "Introduction Notes",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ],
+    "practice": []
+  },
+  {
+    "id": "ds-1502",
+    "courseName": "Programming for Data Science Laboratory",
+    "courseCode": "DS 1502",
+    "trimester": "1st",
+    "courseCredit": "1",
+    "courseType": "Departmental",
+    "resourceType": "Notes",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [
+      {
+        "author": "Nafis Alom",
+        "email": "nafis@uiu.ac.bd",
+        "id": "2102034",
+        "noteTitle": "Lab Cheatsheet",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ],
+    "practice": [
+      {
+        "documentTitle": "Loop Exercises",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": "eng-1011",
+    "courseName": "English I",
+    "courseCode": "ENG 1011",
+    "trimester": "1st",
+    "courseCredit": "3",
+    "courseType": "Non-Departmental",
+    "resourceType": "",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "bds-1201",
+    "courseName": "History of the Emergence of Bangladesh",
+    "courseCode": "BDS 1201",
+    "trimester": "1st",
+    "courseCredit": "3",
+    "courseType": "Non-Departmental",
+    "resourceType": "Notes",
+    "questions": {
+      "classTest": [],
+      "midtermExam": [
+        {
+          "trimesterName": "Fall 2023",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ],
+      "finalExam": []
+    },
+    "notes": [
+      {
+        "author": "Mehnaz Jahan",
+        "email": "mehnaz@uiu.ac.bd",
+        "id": "2101202",
+        "noteTitle": "Bangladesh Timeline Notes",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ],
+    "practice": []
+  },
+  {
+    "id": "ds-1101",
+    "courseName": "Fundamentals of Data Science",
+    "courseCode": "DS 1101",
+    "trimester": "3rd",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Exam Materials",
+    "questions": {
+      "classTest": [
+        {
+          "testNo": "CT-1",
+          "trimesterName": "Summer 2024",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ],
+      "midtermExam": [],
+      "finalExam": [
+        {
+          "trimesterName": "Summer 2024",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ]
+    },
+    "notes": [],
+    "practice": [
+      {
+        "documentTitle": "Statistics Exercises",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": "bio-3105",
+    "courseName": "Biology",
+    "courseCode": "BIO 3105",
+    "trimester": "3rd",
+    "courseCredit": "3",
+    "courseType": "Non-Departmental",
+    "resourceType": "",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "math-2107",
+    "courseName": "Linear Algebra",
+    "courseCode": "MATH 2107",
+    "trimester": "3rd",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Exam Materials",
+    "questions": {
+      "classTest": [],
+      "midtermExam": [
+        {
+          "trimesterName": "Fall 2024",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ],
+      "finalExam": []
+    },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "phy-2105",
+    "courseName": "Physics",
+    "courseCode": "PHY 2105",
+    "trimester": "3rd",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Notes",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [
+      {
+        "author": "Tanvir Ahmed",
+        "email": "tanvir@uiu.ac.bd",
+        "id": "2104055",
+        "noteTitle": "Electromagnetism Summary",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      },
+      {
+        "author": "Tanvir Ahmed",
+        "email": "tanvir@uiu.ac.bd",
+        "id": "2104056",
+        "noteTitle": "Electromagnetism Summary-2",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ],
+    "practice": []
+  },
+  {
+    "id": "cse-2215",
+    "courseName": "Data Structures and Algorithms - I",
+    "courseCode": "CSE 2215",
+    "trimester": "4th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Exam Materials",
+    "questions": {
+      "classTest": [
+        {
+          "testNo": "CT-1",
+          "trimesterName": "Spring 2023",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        },
+        {
+          "testNo": "CT-2",
+          "trimesterName": "Spring 2023",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        },
+        {
+          "testNo": "CT-3",
+          "trimesterName": "Spring 2023",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ],
+      "midtermExam": [],
+      "finalExam": [
+        {
+          "trimesterName": "Spring 2023",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ]
+    },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "cse-2216",
+    "courseName": "DSA-I Lab",
+    "courseCode": "CSE 2216",
+    "trimester": "4th",
+    "courseCredit": "1",
+    "courseType": "Departmental",
+    "resourceType": "",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "math-2101",
+    "courseName": "Advanced Calculus",
+    "courseCode": "MATH 2101",
+    "trimester": "4th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Notes",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [
+      {
+        "author": "Arif Hasan",
+        "email": "arif@uiu.ac.bd",
+        "id": "2103331",
+        "noteTitle": "Advanced Integration Notes",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ],
+    "practice": []
+  },
+  {
+    "id": "cse-2213",
+    "courseName": "Discrete Mathematics",
+    "courseCode": "CSE 2213",
+    "trimester": "4th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Practice",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [],
+    "practice": [
+      {
+        "documentTitle": "Logic Exercises",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": "cse-2217",
+    "courseName": "DSA-II",
+    "courseCode": "CSE 2217",
+    "trimester": "5th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "cse-2218",
+    "courseName": "DSA-II Lab",
+    "courseCode": "CSE 2218",
+    "trimester": "5th",
+    "courseCredit": "1",
+    "courseType": "Departmental",
+    "resourceType": "",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "math-2205",
+    "courseName": "Probability and Statistics",
+    "courseCode": "MATH 2205",
+    "trimester": "5th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Exam Materials",
+    "questions": {
+      "classTest": [
+        {
+          "testNo": "CT-1",
+          "trimesterName": "Summer 2024",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ],
+      "midtermExam": [],
+      "finalExam": []
+    },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "ds-3885",
+    "courseName": "Data Wrangling",
+    "courseCode": "DS 3885",
+    "trimester": "5th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Notes",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [
+      {
+        "author": "Mahin Hasan",
+        "email": "mahin@uiu.ac.bd",
+        "id": "2102933",
+        "noteTitle": "Wrangling with Pandas",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ],
+    "practice": []
+  },
+  {
+    "id": "ds-4889",
+    "courseName": "Machine Learning",
+    "courseCode": "DS 4889",
+    "trimester": "7th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Exam Materials",
+    "questions": {
+      "classTest": [
+        {
+          "testNo": "CT-1",
+          "trimesterName": "Fall 2024",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ],
+      "midtermExam": [
+        {
+          "trimesterName": "Fall 2024",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ],
+      "finalExam": []
+    },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "ds-4523",
+    "courseName": "Simulation and Modeling",
+    "courseCode": "DS 4523",
+    "trimester": "7th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "ds-4891",
+    "courseName": "Data Analytics",
+    "courseCode": "DS 4891",
+    "trimester": "7th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Notes",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [
+      {
+        "author": "Nazia Arefin",
+        "email": "nazia@uiu.ac.bd",
+        "id": "2104999",
+        "noteTitle": "Analytics Summary Notes",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ],
+    "practice": []
+  },
+  {
+    "id": "ds-4892",
+    "courseName": "Data Analytics Lab",
+    "courseCode": "DS 4892",
+    "trimester": "7th",
+    "courseCredit": "1",
+    "courseType": "Departmental",
+    "resourceType": "",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [],
+    "practice": [
+      {
+        "documentTitle": "Lab Exercise 1",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": "ds-3120",
+    "courseName": "Technical Report Writing",
+    "courseCode": "DS 3120",
+    "trimester": "7th",
+    "courseCredit": "1",
+    "courseType": "Non-Departmental",
+    "resourceType": "",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [],
+    "practice": []
+  },
+  {
+    "id": "ds-4000a",
+    "courseName": "Capstone Project I",
+    "courseCode": "DS 4000A",
+    "trimester": "10th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Notes",
+    "questions": { "classTest": [], "midtermExam": [], "finalExam": [] },
+    "notes": [
+      {
+        "author": "Team UIU DS",
+        "email": "team@uiu.ac.bd",
+        "id": "2105001",
+        "noteTitle": "Capstone Guidelines",
+        "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+      }
+    ],
+    "practice": []
+  },
+  {
+    "id": "ds-4000b",
+    "courseName": "Capstone Project II",
+    "courseCode": "DS 4000B",
+    "trimester": "10th",
+    "courseCredit": "3",
+    "courseType": "Departmental",
+    "resourceType": "Exam Materials",
+    "questions": {
+      "classTest": [],
+      "midtermExam": [],
+      "finalExam": [
+        {
+          "trimesterName": "Spring 2025",
+          "driveLink": "https://drive.google.com/file/d/1b4C1r7t2NoZyKWUFcOK0yJjvTpJaSmKn/view?usp=sharing"
+        }
+      ]
+    },
+    "notes": [],
+    "practice": []
+  }
+]
