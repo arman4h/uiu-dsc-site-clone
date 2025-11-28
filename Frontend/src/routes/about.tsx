@@ -68,13 +68,13 @@ function AboutPage() {
       {/* Gallery */}
       <section className="px-6 py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex flex-col md:flex-row items-center justify-between mb-6">
             <div>
               <h2 className="text-3xl font-bold text-cyan-600">Gallery</h2>
               <p className="text-gray-600">A selection of moments from our events and workshops.</p>
             </div>
-            <div>
-              <Link to="/gallery" className="inline-flex items-center gap-2 bg-white border border-cyan-200 text-cyan-600 px-4 py-2 rounded-lg hover:bg-cyan-50 transition">
+            <div className='flex justify-end '>
+              <Link to="/gallery" className="flex justify-end  items-center gap-2 bg-white border border-cyan-200 text-cyan-600 px-4 py-2 rounded-lg hover:bg-cyan-50 transition">
                 See Photo Gallery <Camera className="w-4 h-4" />
               </Link>
             </div>

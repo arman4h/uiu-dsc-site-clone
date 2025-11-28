@@ -25,7 +25,7 @@ function PartnersPage() {
       {/* Featured Partnership */}
       <section className="px-6 py-12">
         <div className="max-w-6xl mx-auto bg-white rounded-2xl border border-cyan-100 p-8 shadow-sm">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12  gap-8 items-center">
             <div className="lg:col-span-7">
               <span className="inline-block text-cyan-600 bg-cyan-50/60 px-3 py-1 rounded-full text-sm font-medium mb-4">
                 Official Partnership

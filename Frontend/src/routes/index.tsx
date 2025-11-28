@@ -45,7 +45,7 @@ function App() {
       </div> */}
 
       {/* Hero Section */}
-      <section className="bg-linear-to-b from-blue-50 to-white px-6 py-28 ">
+      <section className="bg-linear-to-b from-blue-50 to-white px-6 py-10 md:py-28 ">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl md:text-6xl font-bold text-cyan-600 mb-2 leading-tight">
@@ -100,10 +100,10 @@ function App() {
               with 500+ courses on Python, SQL, R, and Machine Learning. Boost
               your data science skills!
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <Link
                 to="/"
-                className="bg-white text-cyan-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
+                className="bg-white text-cyan-600  px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition"
               >
                 Learn More
               </Link>
@@ -189,7 +189,7 @@ function App() {
               back soon for updates, or follow us on social media for
               @UIUcodeforchange
             </p>
-            <div className="flex justify-center gap-4 text-sm md:text-base">
+            <div className="flex flex-col md:flex-row justify-center gap-4 text-sm md:text-base">
               <Link
                 to="/"
                 className="text-zinc-900 border border-cyan-200/40 px-8 py-2 rounded-xl font-medium hover:bg-cyan-50 transition"
@@ -198,7 +198,7 @@ function App() {
               </Link>
               <Link
                 to="/"
-                className="text-white bg-cyan-500 border border-cyan-200/40 px-8 py-2 rounded-xl font-medium hover:bg-cyan-600 transition flex items-center gap-2"
+                className="text-white bg-cyan-500 border border-cyan-200/40 px-8 py-2 rounded-xl font-medium hover:bg-cyan-600 transition flex items-center justify-center gap-2"
               >
                 Follow Updates
                 <LinkIcon className="w-4 h-4" />
