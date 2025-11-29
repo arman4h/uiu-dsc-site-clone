@@ -40,7 +40,7 @@ function PracticePage() {
   const { category, trimester, courseId } = Route.useParams()
   const { resources } = Route.useLoaderData()
 
-  const course = useMemo(() => resources.find((r) => r.id === courseId), [resources, courseId])
+  const course = useMemo(() => resources.find((r: { id: any }) => r.id === courseId), [resources, courseId])
 
   if (!course) {
     return (
@@ -77,7 +77,7 @@ function PracticePage() {
           <div className="text-center py-12 text-gray-500">No practice materials available.</div>
         ) : (
           <div className="space-y-4">
-            {practiceItems.map((item, idx) => (
+            {practiceItems.map((item: { documentTitle: any; driveLink: string | undefined }, idx: number) => (
               <div
                 key={`practice-${idx}`}
                 className="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between"
