@@ -246,8 +246,6 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
-      <Footer/>
     </div>
   )
 }

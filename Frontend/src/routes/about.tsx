@@ -9,10 +9,10 @@ export const Route = createFileRoute('/about')({
 
 
 const galleryImages = [
-  'https://scontent.fdac155-1.fna.fbcdn.net/v/t39.30808-6/528222452_122145127400779406_4016274162636514116_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH4JG442LN7nd9HHWvgEv73GyaaG4zXJt0bJpobjNcm3UdATWBiaLCjjFe5FCVaHjsC-jD2W7mrK_OkwzVWCNkk&_nc_ohc=z0DudCgOM0oQ7kNvwEFVz1A&_nc_oc=AdmbRh5XMvCoJx4ITuL2etQKOYuQ9UO9VBCIU_Yz9IPfk_2Zm8uJfR8DRwq8zz1K-Fk&_nc_zt=23&_nc_ht=scontent.fdac155-1.fna&_nc_gid=FtXfAk0ooNdfHADrglLdoA&oh=00_Afh7oSm5lO7hBRJFXGaKVOugiUPFum0eSppaX58Tj4trkg&oe=692E22ED',
-  'https://scontent.fdac155-1.fna.fbcdn.net/v/t39.30808-6/528923515_122145128618779406_4544793405617863744_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHC7-lyp73w0gWdCMOozL3zZkDREuFGc89mQNES4UZzz97WpUKf5oTSEhvshWmYxl2-J5aiLJNyntMi_Q7Jjmv7&_nc_ohc=OqGNhjWlDSIQ7kNvwF9yTDY&_nc_oc=Adk_gSCqmg-8xy7cNklxE8xTT7yKEOLG3XtDPPUksjplKAuiDbJYOmrfpCjEmiTLSng&_nc_zt=23&_nc_ht=scontent.fdac155-1.fna&_nc_gid=WexMX1CXN9mbSe_mOJjNCQ&oh=00_AfjJ-EdKD9Y-2rpqnadivePp9QLVrptoLdZaamFKJHt2XA&oe=692E31CA',
-  'https://scontent.fdac155-1.fna.fbcdn.net/v/t39.30808-6/537386129_122147451536779406_2629895243971154060_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF2HbyOTfYEhXGEohgTUfO9uVuB2HAj0t25W4HYcCPS3eCIO4rObzGn9PZtNa_JxRwggP8iGl3EEk0A4Dn-7UqC&_nc_ohc=Qnr7Q54FKXoQ7kNvwHpf4SG&_nc_oc=AdlIsU_zqixRRt-BbhLkWToStzxXRtP7Avnd75tuf6_qtzmyiRMNKnUeuLs6lcZMaEU&_nc_zt=23&_nc_ht=scontent.fdac155-1.fna&_nc_gid=ye_eBdfuKORpuESlUCAkAA&oh=00_Afg_t3QoLeX_O1-Wzal2PoWT-ZR8DVx5FcOWj7ok0riR-Q&oe=692E2406',
-  'https://scontent.fdac155-1.fna.fbcdn.net/v/t39.30808-6/537093556_122147947916779406_5832389922899693780_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHEYASU5wmQ2-EYB-B41T6bLsUbzbJRlnEuxRvNslGWcYpVrUqQANKXgnRnE5DSnySZsbrBX6QiMoH6gO9bgfoX&_nc_ohc=tuU6f-1G3VoQ7kNvwE7s9Qy&_nc_oc=AdlryLRNLuQLjdVqOoekOXgn3V_-YLNPH0OFgzyDNZrUeAN8gHxHknZIOGd8O6YW2us&_nc_zt=23&_nc_ht=scontent.fdac155-1.fna&_nc_gid=vY7JRtwuuveJv0Z0C5lX8Q&oh=00_AfhBTZQ54ooia5aGKim6Vczc9Q1RnPic1hthQPe2Wekxew&oe=692E46BE',
+  'https://images.unsplash.com/photo-1757143090822-df6101c314e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFVuaXZlcnNpdHklMjBDbHViJTIwRXZlbnRzfGVufDB8fDB8fHww',
+  'https://images.unsplash.com/photo-1747674148491-51f8a5c723db?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fFVuaXZlcnNpdHklMjBDbHViJTIwRXZlbnRzfGVufDB8fDB8fHww',
+  'https://images.unsplash.com/photo-1755469163642-15b96466924a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fFVuaXZlcnNpdHklMjBDbHViJTIwRXZlbnRzfGVufDB8fDB8fHww',
+  'https://images.unsplash.com/photo-1581617616979-ca3d553d0120?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fFVuaXZlcnNpdHklMjBDbHViJTIwRXZlbnRzfGVufDB8fDB8fHww',
 ]
 
 function AboutPage() {
