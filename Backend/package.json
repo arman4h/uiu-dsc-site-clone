@@ -3,13 +3,16 @@
   "name": "uiu-dsc-backend",
   "version": "1.0.0",
   "description": "Backend API for UIU Data Science Club website",
-  "main": "index.js",
+  "main": "api/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+    "start": "node api/index.js",
+    "dev": "node --watch api/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "express": "^4.21.0"
   }
 }

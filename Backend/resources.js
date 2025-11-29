@@ -6,11 +6,14 @@ import { fileURLToPath } from "url"
 const router = express.Router()
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const dataPath = path.join(__dirname, "../data/resources.json")
+
+// Use path.join with __dirname for Vercel compatibility
+const getDataPath = () => path.join(__dirname, "data", "resources.json")
 
 // GET all resources
 router.get("/", (req, res) => {
   try {
+    const dataPath = getDataPath()
     const jsonData = fs.readFileSync(dataPath, "utf8");
     const resources = JSON.parse(jsonData);
     res.json(resources);
@@ -25,6 +28,7 @@ router.get("/:id", (req, res) => {
   const resourceId = req.params.id;
 
   try {
+    const dataPath = getDataPath()
     const jsonData = fs.readFileSync(dataPath, "utf8");
     const resources = JSON.parse(jsonData);
 
@@ -41,4 +45,4 @@ router.get("/:id", (req, res) => {
   }
 });
 
-export default router; 
+export default router;
