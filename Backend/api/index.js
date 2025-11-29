@@ -1,7 +1,7 @@
 import express from "express" ;
 import cors from "cors" ;
-import eventRoutes from "./routes/eventRoutes.js" ;
-import resourcesRoute from "./resources.js"
+import eventRoutes from "../routes/eventRoutes.js" ;
+import resourcesRoute from "../resources.js"
 
 const PORT = 5000;
 const app = express() ;
